@@ -1,33 +1,98 @@
 .App {
   text-align: center;
+  background-color: whitesmoke;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.mainTitle{
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerMenu {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: solid 1px lightgray
+}
+
+.linkBtn{
+  padding: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.linkBtn:hover ,
+.selectedLinkBtn {
+  color:blue;
+  text-decoration: underline;
+}
+.selectBtn {
+  border: solid 1px gray;
+  padding: 5px;
+  color: black;
+  cursor: pointer;
+  display: block;
+  border-radius: 20px;
+  width: 130px;
+  margin: 0 auto
+}
+
+.pricingBox {
+  width: 280px;
+  border: solid 0.1px lightgray;
+  background-color: white;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.selectBtn:hover,
+.selectedPricing {
+  background-color: blue;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.displayPricingBox {
+  background-color: whitesmoke;
+  padding: 35px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.pricingTitle{
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: solid 1px lightgray;
+  padding-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.nextBtn{
+  border: solid 1px gray;
+  margin-right: 15px;
+  padding: 12px 35px;
+  border-radius: 3px;
+  background-color: blue;
+  opacity: 0.3;
+}
+
+.backBtn{
+  margin: 15px;
+  color: blue;
+}
+
+.selectedNextBtn{
+  opacity: 1;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.description{
+  color: gray;
 }
